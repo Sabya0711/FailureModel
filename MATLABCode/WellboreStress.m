@@ -1,0 +1,11 @@
+Thetad=0:0.1:360;
+Theta=deg2rad(Thetad);
+Sigrr=zeros(1,3601);
+Sigrr(:)=dP;
+Sigzz=Sv-P-(2*nu*cos(2*Theta)*(SHm-Shm));
+Sigtt=Shm+SHm-(2*P)-dP-(2*cos(2*Theta)*(SHm-Shm));
+plot(Thetad,Sigrr,'r');
+hold on;
+plot(Thetad,Sigzz,'g');
+plot(Thetad,Sigtt,'b');
+hold off;

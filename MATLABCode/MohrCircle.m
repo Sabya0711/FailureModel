@@ -1,0 +1,15 @@
+S0=C0/(2*Univterm(mi));
+sig1=S1-P; sig2=S2-P; sig3=S3-P;
+sigm=(sig1+sig3)/2; taum=(sig1-sig3)/2;
+beta2d=0:0.1:180;
+beta2=deg2rad(beta2d);
+xm=sigm+(taum*cos(beta2));
+ym=taum*sin(beta2);
+plot(xm,ym); axis ([-2000 5000 0 5000]);
+hold on;
+scatter(sig1,0,500,'.k');
+scatter(sig3,0,500,'.k');
+a=0:0.1:(sig1+100);
+b=S0+(a*mi);
+plot(a,b,'r');
+scatter(-T0,0,500,'.b');
