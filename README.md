@@ -1,6 +1,6 @@
 # FailureModel
 
-Developed a software in MATLAB to compute the in-situ stress state using the failure model
+Developed a program in MATLAB to compute the in-situ stress state using the failure model
 
 To run the MATLAB code open the "MATLABCode" folder and read the requirements.txt
 
